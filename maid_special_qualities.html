@@ -1,0 +1,102 @@
+<DOCTYPE!> 
+<html>
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+<body class="bg-white-100">
+    <h1 class="text-3xl font-bold underline text-center pt-12">Maid Special Qualities</h1>
+    <br />
+    <p class="text-xl text-center pb-2 font-bold" id="information-title">👀</p>
+    <p class="text-center pb-10 px-10" id="information-label">What did you roll?</p>
+
+    <div class="grid grid-cols-6 gap-6 px-10" id="button-case">
+        <button onClick="getInformation('11')" class="bg-red-100 text-center hover:bg-blue-800 p-2 rounded-sm">11</button>
+        <button onClick="getInformation('12')"class="bg-orange-100 text-center hover:bg-blue-800 p-2 rounded-sm">12</button>
+        <button onClick="getInformation('13')"class="bg-yellow-100 text-center hover:bg-blue-800 p-2 rounded-sm">13</button>
+        <button onClick="getInformation('14')"class="bg-green-100 text-center hover:bg-blue-800 p-2 rounded-sm">14</button>
+        <button onClick="getInformation('15')"class="bg-blue-100 text-center hover:bg-blue-800 p-2 rounded-sm">15</button>
+        <button onClick="getInformation('16')"class="bg-violet-100 text-center hover:bg-blue-800 p-2 rounded-sm">16</button>
+        <button onClick="getInformation('21')"class="bg-red-200 text-center hover:bg-blue-800 p-2 rounded-sm">21</button>
+        <button onClick="getInformation('22')"class="bg-orange-200 text-center hover:bg-blue-800 p-2 rounded-sm">22</button>
+        <button onClick="getInformation('23')"class="bg-yellow-200 text-center hover:bg-blue-800 p-2 rounded-sm">23</button>
+        <button onClick="getInformation('24')"class="bg-green-200 text-center hover:bg-blue-800 p-2 rounded-sm">24</button>
+        <button onClick="getInformation('25')"class="bg-blue-200 text-center hover:bg-blue-800 p-2 rounded-sm">25</button>
+        <button onClick="getInformation('26')"class="bg-violet-200 text-center hover:bg-blue-800 p-2 rounded-sm">26</button>
+        <button onClick="getInformation('31')"class="bg-red-300 text-center hover:bg-blue-800 p-2 rounded-sm">31</button>
+        <button onClick="getInformation('32')"class="bg-orange-300 text-center hover:bg-blue-800 p-2 rounded-sm">32</button>
+        <button onClick="getInformation('33')"class="bg-yellow-300 text-center hover:bg-blue-800 p-2 rounded-sm">33</button>
+        <button onClick="getInformation('34')"class="bg-green-300 text-center hover:bg-blue-800 p-2 rounded-sm">34</button>
+        <button onClick="getInformation('35')"class="bg-blue-300 text-center hover:bg-blue-800 p-2 rounded-sm">35</button>
+        <button onClick="getInformation('36')"class="bg-violet-300 text-center hover:bg-blue-800 p-2 rounded-sm">36</button>
+        <button onClick="getInformation('41')"class="bg-red-400 text-center hover:bg-blue-800 p-2 rounded-sm">41</button>
+        <button onClick="getInformation('42')"class="bg-orange-400 text-center hover:bg-blue-800 p-2 rounded-sm">42</button>
+        <button onClick="getInformation('43')"class="bg-yellow-400 text-center hover:bg-blue-800 p-2 rounded-sm">43</button>
+        <button onClick="getInformation('44')"class="bg-green-400 text-center hover:bg-blue-800 p-2 rounded-sm">44</button>
+        <button onClick="getInformation('45')"class="bg-blue-400 text-center hover:bg-blue-800 p-2 rounded-sm">45</button>
+        <button onClick="getInformation('46')"class="bg-violet-400 text-center hover:bg-blue-800 p-2 rounded-sm">46</button>
+        <button onClick="getInformation('51')"class="bg-red-500 text-center hover:bg-blue-800 p-2 rounded-sm">51</button>
+        <button onClick="getInformation('52')"class="bg-orange-500 text-center hover:bg-blue-800 p-2 rounded-sm">52</button>
+        <button onClick="getInformation('53')"class="bg-yellow-500 text-center hover:bg-blue-800 p-2 rounded-sm">53</button>
+        <button onClick="getInformation('54')"class="bg-green-500 text-center hover:bg-blue-800 p-2 rounded-sm">54</button>
+        <button onClick="getInformation('55')"class="bg-blue-500 text-center hover:bg-blue-800 p-2 rounded-sm">55</button>
+        <button onClick="getInformation('56')"class="bg-violet-500 text-center hover:bg-blue-800 p-2 rounded-sm">56</button>
+        <button onClick="getInformation('61')"class="bg-red-600 text-center hover:bg-blue-800 p-2 rounded-sm">61</button>
+        <button onClick="getInformation('62')"class="bg-orange-600 text-center hover:bg-blue-800 p-2 rounded-sm">62</button>
+        <button onClick="getInformation('63')"class="bg-yellow-600 text-center hover:bg-blue-800 p-2 rounded-sm">63</button>
+        <button onClick="getInformation('64')"class="bg-green-600 text-center hover:bg-blue-800 p-2 rounded-sm">64</button>
+        <button onClick="getInformation('65')"class="bg-blue-600 text-center hover:bg-blue-800 p-2 rounded-sm">65</button>
+        <button onClick="getInformation('66')"class="bg-violet-600 text-center hover:bg-blue-800 p-2 rounded-sm">66</button>
+    </div>
+</body>
+<script>
+    let dictionary = {}; 
+        dictionary["11"] = {"title": "Glasses", "label": "You wear glasses and can't use contact lenses. Choose your own frame."}
+        dictionary["12"] = {"title": "Freckles", "label": "You have freckles."}
+        dictionary["13"] = {"title": "Sickly", "label": "You've got an incurable disease."}
+        dictionary["14"] = {"title": "Quiet", "label": "You have a cool, subtle demeanor."}
+        dictionary["15"] = {"title": "Easygoing", "label": "You take things slow and calm, at your own pace."}
+        dictionary["16"] = {"title": "Neat Freak", "label": "You're obsessed with cleanliness."}
+
+        dictionary["21"] = {"title": "Brown Skin", "label": "Your skin is a dark brown color. Could be natural or a tan."}
+        dictionary["22"] = {"title": "Albino", "label": "You have no pigment. You're not necessarily completely colorless"}
+        dictionary["23"] = {"title": "Shy", "label": "You're very shy. Don't forget to remain silent when meeting new NPCs!"}
+        dictionary["24"] = {"title": "Actually A Guy", "label": "You're actually a guy (cross-dresser?). Or possibly a hermaphrodite."}
+        dictionary["25"] = {"title": "Overactive Imagination", "label": "You frequently get caught up in your own imaginary world/daydream a lot."}
+        dictionary["26"] = {"title": "Greedy", "label": "You will do absolutely anything for the sake of money."}
+        
+        dictionary["31"] = {"title": "Elf Ears", "label": "You have long, pointed ears."}
+        dictionary["32"] = {"title": "Nekomimi", "label": "You're a catgirl, with the ears and possibly tail of a cat."}
+        dictionary["33"] = {"title": "Android/Gynoid", "label": "You're not a human, but rather a human-looking robot."}
+        dictionary["34"] = {"title": "Vampire", "label": "You are a vampire, with long fangs. Be sure to act... vampiric."}
+        dictionary["35"] = {"title": "Princess", "label": "You're actially a princess! Whether you are in disguise is up to you."}
+        dictionary["36"] = {"title": "Angel/Devil", "label": "You are a being from another world charged with judging good and evil."}
+        
+        dictionary["41"] = {"title": "Uniform", "label": "You've made a special modification to your uniform → Uniform Table."}
+        dictionary["42"] = {"title": "Symbol", "label": "You have some kind of special mark on your uniform → Symbol Table."}
+        dictionary["43"] = {"title": "Delinquent", "label": "Something about you is very much like a delinquent → Delinquent Table."}
+        dictionary["44"] = {"title": "Accent", "label": "You have an unusual way of speaking → Accent Table."}
+        dictionary["45"] = {"title": "Choose Again", "label": "Re-roll for a new quality."}
+        dictionary["46"] = {"title": "Accessory", "label": "You have a special accessory → Accessory Table."}
+        
+        dictionary["51"] = {"title": "Relationship", "label": "You have a relationship to another player character → Relationship Table."}
+        dictionary["52"] = {"title": "Criminal Tendencies", "label": "You have an inclination towards criminal acts → Criminal Tendencies Table."}
+        dictionary["53"] = {"title": "Injury", "label": "Because of mistreatment of an accident, you have some kind of permanent physical injury → Injury Table."}
+        dictionary["54"] = {"title": "Tragic Love", "label": "You have had sad or tragic experiences with love → Tragic Love Table."}
+        dictionary["55"] = {"title": "Dark Past", "label": "There is something dark in your personal history → Dark Past Table."}
+        dictionary["56"] = {"title": "Choose Again", "label": "Re-roll for a new quality."}
+
+        dictionary["61"] = {"title": "Secret Job", "label": "You're not just a maid; you're a → Secret Job Table."}
+        dictionary["62"] = {"title": "Membership", "label": "You're also a a member of a certain org → Membership Table."}
+        dictionary["63"] = {"title": "Shapeshifter", "label": "You're an animal/creature taking the form of a main → Shapeshifter Table."}
+        dictionary["64"] = {"title": "Monster", "label": "You're not human but rather some kind of monster → Monster Table."}
+        dictionary["65"] = {"title": "Magic", "label": "You can use some kind of magical power → Magic Table."}
+        dictionary["66"] = {"title": "Absurd", "label": "You're something that flies in the face of common sense → Absurd Table."}
+
+    function getInformation(number) { 
+        document.getElementById("information-title").innerHTML = dictionary[number]["title"]
+        document.getElementById("information-label").innerHTML = dictionary[number]["label"]
+    }
+</script>
+</html>
